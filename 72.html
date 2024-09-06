@@ -1,0 +1,105 @@
+<html>
+    <body>
+        <script>
+            var people = [
+            {
+            "firstname": "praveen",
+            "lastname": "gubbala",
+            "age": 36,
+            "gender": "male",
+            "city": "hyd",
+            "salary": 10000
+            },
+            {
+            "firstname": "srikanth",
+            "lastname": "gubbala",
+            "age": 32,
+            "gender": "male",
+            "city": "bengaluru",
+            "salary": 20000
+            },
+            {
+            "firstname": "pradeep",
+            "lastname": "reddy",
+            "age": 21,
+            "gender": "male",
+            "city": "hyd",
+            "salary": 30000
+            },
+            {
+            "firstname": "mounika",
+            "lastname": "mudiraj",
+            "age": 20,
+            "gender": "female",
+            "city": "nalgonda",
+            "salary": 30000
+            },
+            {
+            "firstname": "nikhil",
+            "lastname": "m",
+            "age": 22,
+            "gender": "male",
+            "city": "guntur",
+            "salary": 30000
+            },
+            {
+            "firstname": "riya",
+            "lastname": "bhadouria",
+            "age": 14,
+            "gender": "female",
+            "city": "indore",
+            "salary": 40000
+            }
+            ];
+            <!-- Print all the firstnames. -->
+          for(var k in people){
+            console.log(people[k]["firstname"])
+          }
+          <!-- Print all the full names. -->
+         for(var k in people){
+            console.log(people[k]["firstname"],people[k]["lastname"])
+         }
+         <!-- Print only those names whose age is more than 25. -->
+          for(var i=0;i<=people.length-1;i++){
+            if(people[i]["age"]>25){
+                console.log(people[i]["firstname"],people[i]["lastname"])
+            }
+          }
+          <!-- Print all female names. -->
+          for(var k in people){
+            if(people[k]["gender"]== "female"){
+                console.log(people[k]["firstname"],people[k]["lastname"])
+            }
+          }
+          <!-- Print only those names whose salary is more than 30000 and increase their salaries by 15%. -->
+          for(var k in people){
+            if(people[k]["salary"] > 30000){
+               
+                var inc=people[k]["salary"]*0.15
+                var tot=inc+people[k]["salary"]
+                console.log(people[k]["firstname"],tot)
+            }
+          }
+          <!-- Using prompt, print only those names whose city is "hyd". -->
+             var n=prompt()
+             for(var k in people){
+                if(people[k][ "city"]== n){
+                    console.log(people[k]["firstname"])
+                }
+             }
+             <!-- Print the total salary of all the people. -->
+             var sum=0
+             for(var k in people){
+               sum =sum + people[k]["salary"]
+             }
+             console.log(sum)
+             <!-- Print all the firstnames whose salary is more than 30000. -->
+             for(var k in people){
+                if(people[k]["salary"]>30000){
+                    console.log(people[k]["firstname"])
+                }
+             }
+              
+        </script>
+    </body>
+</html>

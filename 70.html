@@ -1,0 +1,123 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var marks = {
+                "maths" : 34,
+                "english" : 56,
+                "science": 32,
+                "hindi" : 75,
+                "social science": 65
+            };
+              
+             for(var k  in marks)
+             {
+                console.log(k,marks[k])
+
+             }
+             for(var k in marks){
+                console.log(k)
+             }
+               c= 0
+               for( var k in marks)
+               {
+                c++
+               }
+                console.log(c)
+                var sum = 0
+                var par;
+                for(var k in marks){
+                    sum= sum +marks[k]
+                    
+                }
+                 par = (sum/500)*100
+                 console.log(par)
+
+                 for(var k in  marks){
+                    if(marks[k]>35){
+                        console.log(marks[k])
+
+                    }
+                    
+                 }
+                  for (var k in marks ){
+                    if(marks[k]>35){
+                        console.log("pass")
+                    }
+                    else{
+                        console.log("fail")
+                    }
+                  }
+                  for (var k in marks){
+                    if(marks[k]>35){
+                        console.log(k)
+                    }
+                  }
+                  var c= 0;
+                  for(var k in marks ){
+                    if(marks[k]>35){
+                    c++
+                    }
+                    
+                    
+                  }
+                  console.log(c)
+                  
+                  for(var k in marks){
+                    if(marks[k]<35){
+                        console.log(k)
+                    }
+                  }
+                   var c = 0;
+                   for(var k in marks){
+                    if(marks[k]<35){
+                        c++
+                    }
+                   }
+                    console.log(c)
+
+                    least= Infinity;
+                    for(var k in marks){
+                        if(marks[k]<least){
+                            least=marks[k]
+                        }
+                    }
+                     console.log(least)
+
+                     higst=0;
+                     var n;
+                     for(var k in marks){
+                        if(marks[k]>higst){
+                            higst=marks[k];
+                            n=k;
+                        }
+                     }
+                        console.log(n)
+
+                      for(var k in marks){
+                        if(marks[k]<35)
+                        {
+                            console.log("all sub are fail")
+                        }
+                        else{
+                            console.log("all sub are pass")
+                        }
+                      }
+
+                         var n = prompt();
+
+                      
+                      
+                        if(marks[n] > 35){
+                            console.log(marks[n],"pass")
+                            
+                        }
+                          else{
+                            console.log(marks[n],"fail")
+                          }
+
+                      
+
+        </script>
+    </body>
+</html>
